@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".view.SettlementActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/shape_item_back">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/mrecycler_settlement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/mTV_gong"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="共"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/mTV_shu_set"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="哈哈"
+            android:layout_toRightOf="@id/mTV_gong"
+            android:textColor="#f00"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/mTV_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="件商品,"
+            android:layout_toRightOf="@id/mTV_shu_set"
+            android:textColor="#666666"
+            android:layout_marginLeft="1dp"
+            android:textSize="14sp" />
+         <TextView
+             android:id="@+id/mTV_fu"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_toRightOf="@id/mTV_pin"
+             android:gravity="center"
+             android:text="需付款"
+             android:textColor="#666666"
+             android:textSize="14sp" />
+        <TextView
+            android:id="@+id/mTV_sum_set"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="哈哈"
+            android:layout_toRightOf="@id/mTV_fu"
+            android:textColor="#f00"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/mTV_sum_set"
+            android:gravity="center"
+            android:text="元"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/mBt_tijiao"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ff5e70"
+            android:text="提交订单"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

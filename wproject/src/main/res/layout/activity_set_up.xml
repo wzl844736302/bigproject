@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SetUpActivity"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp">
+    <Button
+        android:layout_marginTop="360dp"
+        android:id="@+id/mBt_tui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_sh"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:text="退出登录"/>
+</LinearLayout>

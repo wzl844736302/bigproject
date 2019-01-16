@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_item_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/mSim_circle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/mTV_name_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/mSim_circle"
+                android:text="哈哈" />
+
+            <TextView
+                android:id="@+id/mTV_date_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="你好"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mTV_text_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="哈斯巴达三百多卡"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/mrecycler"
+           android:layout_width="match_parent"
+           android:layout_marginLeft="10dp"
+           android:layout_height="wrap_content">
+
+       </android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp">
+            <CheckBox
+                android:id="@+id/mCb_dz"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/sel_dz"/>
+            <TextView
+                android:id="@+id/mTV_num_circle"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/mTV_fabiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发表"
+                android:padding="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
