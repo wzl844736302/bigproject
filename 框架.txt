@@ -1,0 +1,4 @@
+愿有岁月可回首，且以深情共白头
+Glide Picasso Fresco  图片加载框架 
+1. 先写一个application fFRECo,initiation(this) 初始化
+2.在布局文件中加入自定义的imageview  引入自定义属性
